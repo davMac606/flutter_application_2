@@ -43,17 +43,21 @@ class MyApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     // ignore: prefer_const_literals_to_create_immutables
                     children: [
-                      MyFile("eu", Colors.indigo, 12, 20),
+                      MyFile("EU TENHO DEPRESSAO", Colors.indigo, 12, 20),
                       SizedBox(height: 20),
-                      MyFile("vou", Colors.yellow, 12, 20),
-                      SizedBox(height: 20),
-                      MyFile("me", Colors.pinkAccent, 12, 20),
+                    
                   ]),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      MyFile("E SIM", Colors.red  , 12, 20)
+                    ],
+                  ),
                     Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     // ignore: prefer_const_literals_to_create_immutables
                     children: [
-                      MyFile("m", Colors.indigo, 12, 20),
+                      MyFile("EU VOU ME M", Colors.indigo, 12, 20),
                       SizedBox(height: 20),
                      MyFile("amanha", Colors.yellow, 12, 20),
                       SizedBox(height: 20),
