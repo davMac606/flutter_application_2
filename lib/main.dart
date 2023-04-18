@@ -34,12 +34,14 @@ class MyApp extends StatelessWidget {
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
                   SizedBox(
+                    // ignore: sort_child_properties_last
                     child: Image.network("https://static.wikia.nocookie.net/supermarioglitchy4/images/a/a8/Saul.webp/revision/latest?cb=20220811065029"),
                     height: 100,
                     width: 100,
                 )]),
                 Row(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    // ignore: prefer_const_literals_to_create_immutables
                     children: [
                       MyFile("eu", Colors.indigo, 12, 20),
                       SizedBox(height: 20),
