@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/my_file.dart';
+import 'my_file.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,55 +26,54 @@ class MyApp extends StatelessWidget {
               centerTitle: true,
             ),
             body: Center(
-
-
-              
-              child: Row(
+              child: Column( 
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
-                  DecoratedBox(decoration: BoxDecoration(color: Colors.indigo),
-                 child: Padding(
-                  padding: EdgeInsets.all(20),
-                  child: Text("Luna", style: TextStyle(fontSize: 25)),
-                 ),
-                  ),
-                  SizedBox(height: 20),
-                  DecoratedBox(decoration: BoxDecoration(color: Colors.yellow),
-                  child: Padding(
-                    padding: EdgeInsets.all(20),
-                    child: Text("Estrela", style: TextStyle(fontSize: 25)),
-                  ),
-                  
-                  ),
-                  SizedBox(height: 20),
-                  DecoratedBox(decoration: BoxDecoration(color: Colors.pinkAccent),
-              child: Padding(
-                padding: EdgeInsets.all(20),
-                child: Text("Luz", style: TextStyle(fontSize: 25)),
-              ),
-               
-                  ),SizedBox(
-                    child: Image.network("https://cdn.pixabay.com/photo/2019/04/06/15/58/cat-4107662_960_720.jpg"),
+                  SizedBox(
+                    child: Image.network("https://static.wikia.nocookie.net/supermarioglitchy4/images/a/a8/Saul.webp/revision/latest?cb=20220811065029"),
                     height: 100,
-                    width: 100,),
-                  
-                  DecoratedBox(decoration: BoxDecoration(color: Colors.blue),
-                  child: Padding(
-                    padding: EdgeInsets.all(20),
-                    child: Text("Kog'Maw", style: TextStyle(fontSize: 25)),
-                  ),
-                  
-                  ),
-                ],
-             
-
-             
-
-
-
-
-              
-            ))));
-  }
-}
+                    width: 100,
+                )]),
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      MyFile("eu", Colors.indigo, 12, 20),
+                      SizedBox(height: 20),
+                      MyFile("vou", Colors.yellow, 12, 20),
+                      SizedBox(height: 20),
+                      MyFile("me", Colors.pinkAccent, 12, 20),
+                  ]),
+                    Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    // ignore: prefer_const_literals_to_create_immutables
+                    children: [
+                      MyFile("m", Colors.indigo, 12, 20),
+                      SizedBox(height: 20),
+                     MyFile("amanha", Colors.yellow, 12, 20),
+                      SizedBox(height: 20),
+                      DecoratedBox(decoration: BoxDecoration(color: Colors.pinkAccent))]),
+                            Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    // ignore: prefer_const_literals_to_create_immutables
+                    children: [
+                      DecoratedBox(decoration: BoxDecoration(color: Colors.indigo),
+                     child: Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Text("<3", style: TextStyle(fontSize: 12)),
+                     ),
+                      ),
+                      SizedBox(height: 20),
+                      DecoratedBox(decoration: BoxDecoration(color: Colors.pinkAccent))])
+                      ]),
+                    
+           
+                      
+                
+              )));
+              }}
+                 
+  
