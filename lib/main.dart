@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                 children: [
                   SizedBox(
                     // ignore: sort_child_properties_last
-                    child: Image.network("https://static.wikia.nocookie.net/supermarioglitchy4/images/a/a8/Saul.webp/revision/latest?cb=20220811065029"),
+                    child: Image.network("https://media-cdn.tripadvisor.com/media/vr-splice-j/07/36/e0/c2.jpg"),
                     height: 100,
                     width: 100,
                 )]),
@@ -43,23 +43,24 @@ class MyApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     // ignore: prefer_const_literals_to_create_immutables
                     children: [
-                      MyFile("EU TENHO DEPRESSAO", Colors.indigo, 12, 20),
+                      MyFile("eu amo a aula da tânia", Colors.indigo, 12, 20),
                       SizedBox(height: 20),
                     
                   ]),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    // ignore: prefer_const_literals_to_create_immutables
                     children: [
-                      MyFile("E SIM", Colors.red  , 12, 20)
+                      MyFile("<3", Colors.red  , 12, 20)
                     ],
                   ),
                     Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     // ignore: prefer_const_literals_to_create_immutables
                     children: [
-                      MyFile("EU VOU ME M", Colors.indigo, 12, 20),
-                      SizedBox(height: 20),
-                     MyFile("amanha", Colors.yellow, 12, 20),
+                      MyFile("atividade", Colors.indigo, 12, 20),
+                      SizedBox(height: 20, width: 10),
+                     MyFile("25/04", Colors.yellow, 12, 20),
                       SizedBox(height: 20),
                       DecoratedBox(decoration: BoxDecoration(color: Colors.pinkAccent))]),
                             Row(
